@@ -4,6 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Explained</title>
+    <style>
+      article {
+        border: 3px solid tomato;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -16,6 +24,38 @@
         </p>
         <p>Lorem ipsum dolor sit amet consectetur.</p>
       </section>
+      <section>
+        <article>
+          <h3>Article-1</h3>
+          <p class="author">Author-1</p>
+          <p class="description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            ratione modi autem at. Tenetur ad esse minima. Asperiores eos animi,
+            itaque fuga, aliquid facere atque ipsum earum quas dolore
+            reiciendis?
+          </p>
+        </article>
+        <article>
+          <h3>Article-2</h3>
+          <p class="author">Author-2</p>
+          <p class="description">
+            Tenetur quam dicta minima pariatur sapiente minus in facere soluta
+            impedit quos odit ea, earum ullam, ab placeat dolor inventore a,
+            beatae consectetur libero laboriosam. Accusamus eius perferendis
+            obcaecati soluta.
+          </p>
+        </article>
+        <article>
+          <h3>Article-3</h3>
+          <p class="author">Author-3</p>
+          <p class="description">
+            Tempora voluptatum, ad aspernatur, nostrum aliquam ipsum vel alias
+            minus necessitatibus praesentium velit sequi saepe facere
+            accusantium ab, hic est repellat quae optio. Corrupti unde ut
+            obcaecati pariatur recusandae facere!
+          </p>
+        </article>
+      </section>
     </main>
     <script>
       //DOM ==> Document Object Model
@@ -27,6 +67,14 @@
       first.style.color = "red";
       first.style.backgroundColor = "yellow";
       first.style.fontSize = "25px";
+
+      var authors = document.getElementsByClassName("author");
+      for (var i = 0; i < authors.length; i++) {
+        var element = authors[i];
+        element.style.backgroundColor = "gray";
+        element.style.margin = "5px";
+        console.log(element.innerHTML);
+      }
     </script>
   </body>
 </html>
