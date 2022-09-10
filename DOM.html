@@ -9,7 +9,8 @@
     <main>
       <section>
         <h1>DOM</h1>
-        <p>
+        <h1>Exploration</h1>
+        <p id="first">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
           minus doloremque. Voluptas!
         </p>
@@ -19,6 +20,10 @@
     <script>
       //DOM ==> Document Object Model
       console.log(document);
+      var first = document.getElementById("first");
+      first.style.color = "red";
+      first.style.backgroundColor = "yellow";
+      first.style.fontSize = "25px";
     </script>
   </body>
 </html>
