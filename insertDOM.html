@@ -61,6 +61,8 @@
       //DOM ==> Document Object Model
       const article = document.getElementById("first-article");
       const newArticle = document.createElement("p");
+      newArticle.innerHTML = "This is a new line";
+      article.appendChild(newArticle);
     </script>
   </body>
 </html>
