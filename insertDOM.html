@@ -55,6 +55,15 @@
             obcaecati pariatur recusandae facere!
           </p>
         </article>
+        <article>
+          <ul class="list-item">
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+          </ul>
+        </article>
       </section>
     </main>
     <script>
@@ -63,6 +72,8 @@
       const newArticle = document.createElement("p");
       newArticle.innerHTML = "This is a new line";
       article.appendChild(newArticle);
+
+      const list = document.getElementById("list-item");
     </script>
   </body>
 </html>
